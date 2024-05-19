@@ -36,7 +36,7 @@ const Todo = () => {
             <h2 className="text-lg text-red-500">
             {todo}
             </h2>
-            <Button onClick={() => setTodos(todos.splice(index,1))}>削除</Button>
+            <Button onClick={() => setTodos(todos.splice(0, index))}>削除</Button>
           </div>
         ))
       }
